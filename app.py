@@ -25,3 +25,12 @@ def download_tiktok_video(url, save_path):
     except Exception as e:
         print(f"Error downloading TikTok video: {str(e)}")
 
+def download_instagram_content(url, save_path):
+    try:
+        loader = instaloader.Instaloader(dirname_pattern=save_path)
+        profile_name = url.split("/")[-2]
+        loader.download_profile(profile_name, profile_pic_only=False)
+        print(f'Instagram content downloaded for: {profile_name}')
+    except Exception as e:
+        print(f"Error downloading Instagram content: {str(e)}")
+
