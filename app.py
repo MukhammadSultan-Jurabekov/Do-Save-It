@@ -34,3 +34,13 @@ def download_instagram_content(url, save_path):
     except Exception as e:
         print(f"Error downloading Instagram content: {str(e)}")
 
+def download_content_from_url(url, save_path):
+    if "youtube.com" in url or "youtu.be" in url:
+        download_youtube_video(url, save_path)
+    elif "tiktok.com" in url:
+        download_tiktok_video(url, save_path)
+    elif "instagram.com" in url:
+        download_instagram_content(url, save_path)
+    else:
+        print("Unsupported platform. Please provide a valid YouTube, TikTok, or Instagram URL.")
+
