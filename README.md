@@ -50,10 +50,11 @@ Enter the URL of a video or image from one of the supported platforms (YouTube, 
 The content will automatically be downloaded to the ./downloads folder.
 
 Example Usage
+```Please provide the URL (YouTube, TikTok, or Instagram): https://www.youtube.com/watch?v=dQw4w9WgXcQ
+YouTube video downloaded: Rick Astley - Never Gonna Give You Up
 ```
-Please provide the URL (YouTube, TikTok, or Instagram): https://www.youtube.com/watch?v=dQw4w9WgXcQ
-YouTube video downloaded: Rick Astley - Never Gonna Give You Up```
-Project Structure
+
+### Project Structure
 ```
 Do-Save-It/
 │
