@@ -44,3 +44,9 @@ def download_content_from_url(url, save_path):
     else:
         print("Unsupported platform. Please provide a valid YouTube, TikTok, or Instagram URL.")
 
+save_path = './downloads'
+os.makedirs(save_path, exist_ok=True)
+
+url = input("Please provide the URL (YouTube, TikTok, or Instagram): ")
+
+download_content_from_url(url, save_path)
